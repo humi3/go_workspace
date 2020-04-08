@@ -15,6 +15,11 @@ gopath の直下に以下のように作成する。
 \$GOPATH については、mac だった以下になっているはず
 `/Users/ユーザ/go`
 
+## package について
+
+他の自作パッケージを import する際には、以下のように読み込む。
+`github.com/ユーザ/プロジェクト/対象のpackage`
+
 ## 参考資料
 
 - [他言語から来た人が Go を使い始めてすぐハマったこととその答え](https://qiita.com/mumoshu/items/0d2f2a13c6e9fc8da2a4)
