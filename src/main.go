@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	kurimoto := user.UserInfo{"0001","kurimoto"}
+	user := user.UserInfo{"0001","kurimoto"}
 
-	fmt.Println(kurimoto.Id)
-	fmt.Println(kurimoto.Name)
+	user.EchoUserInfo(user)
+
 	fmt.Println("Hello world！")
 }
