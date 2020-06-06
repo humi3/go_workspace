@@ -3,13 +3,23 @@ package main
 import (
 	"fmt"
 
-	"github.com/humi3/go_workspace/src/user"
+	db "github.com/humi3/go_workspace/src/db"
 )
 
 func main() {
-	user := user.UserInfo{"0001","kurimoto"}
+	// db.StartDBMigration()
 
-	user.EchoUserInfo(user)
 
-	fmt.Println("Hello world！")
+	// user1 := db.UserInfo{Id:"2",Name:"test1"} 
+	// user2 := db.UserInfo{Id:"3",Name:"test2"} 
+	// user3 := db.UserInfo{Id:"4",Name:"test3"} 
+
+	// db.InsertUser(user1)
+	// db.InsertUser(user2)
+	// db.InsertUser(user3)
+
+	userInfos := db.GetAllUserInfos()
+	for _,user := range userInfos {
+		fmt.Println("id:"+ user.Id + " name:" + user.Name)
+	}
 }
