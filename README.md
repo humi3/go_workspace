@@ -24,3 +24,24 @@ gopath の直下に以下のように作成する。
 
 - [他言語から来た人が Go を使い始めてすぐハマったこととその答え](https://qiita.com/mumoshu/items/0d2f2a13c6e9fc8da2a4)
 - [Go でオブジェクト指向を学ぶ](https://qiita.com/__init__/items/5f6c71eafd2d5e8ccb39)
+
+## DB セットアップ
+
+- `docker-compose up -d`
+- `./init-mysql.sh`
+
+### sh に権限がない場合
+
+- `chmod +x 権限をつけたいファイル名`
+
+## orm
+
+gorm を使用する
+
+### install
+
+`go get github.com/jinzhu/gorm`
+
+## config ファイル読み込みで使用
+
+`go get gopkg.in/ini.v1`
